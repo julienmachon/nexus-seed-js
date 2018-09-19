@@ -6,3 +6,7 @@ services:
     working_dir: /app
     volumes:
       - .:/app
+    ports:
+      - 8000:8000
+      - 34091:34091 # parcel hmr
+      - 9229:9229   # node debugging
